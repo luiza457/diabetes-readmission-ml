@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "seed": 42,
+  "data": {
+    "csv": "diabetic_data.csv",
+    "mapping": "IDS_mapping.csv",
+    "sha256": "0689e7ec031237dc63031b938805c48377748761a3b26acab621567afa24df97",
+    "mapping_sha256": "f1bb82b471cb34649352597572c9b1fb00bd27f77b9f5a22a03dc3eb1039749e",
+    "expected_shape": [101766, 50],
+    "expected_cohort_rows": 100111,
+    "valid_genders": ["Female", "Male"],
+    "expired_discharge_codes": [11, 19, 20, 21],
+    "positive_label": "<30"
+  },
+  "split": {
+    "method": "patient_permutation_nested",
+    "test_fraction": 0.2,
+    "validation_fraction_of_remaining": 0.2,
+    "manifest": "splits/patient_split.csv"
+  },
+  "preprocessing": {
+    "missing_marker": "?",
+    "categorical_fill": "Missing",
+    "numeric_imputation": "training_median",
+    "categorical_encoding": "training_one_hot_unknown_ignore",
+    "matrix": "csr_float32_explicit_numeric_zeros",
+    "excluded_features": ["encounter_id", "patient_nbr", "readmitted", "weight", "examide", "citoglipton"],
+    "numeric_columns": ["time_in_hospital", "num_lab_procedures", "num_procedures", "num_medications", "number_outpatient", "number_emergency", "number_inpatient", "number_diagnoses"]
+  },
+  "model": {
+    "n_estimators": 150,
+    "max_depth": 3,
+    "learning_rate": 0.1,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "objective": "binary:logistic",
+    "tree_method": "hist",
+    "device": "cpu",
+    "n_jobs": 1,
+    "scale_pos_weight": 1.0,
+    "eval_metric": "logloss"
+  },
+  "comparison": {
+    "scope": "same code, data, configuration, pinned versions, CPU and environment",
+    "prediction_atol": 0.0,
+    "prediction_rtol": 0.0,
+    "metric_atol": 0.0,
+    "metric_rtol": 0.0,
+    "split_membership": "exact"
+  }
+}

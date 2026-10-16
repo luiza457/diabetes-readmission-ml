@@ -1,0 +1,25 @@
+.venv/
+__pycache__/
+runs/
+
+# Download public source data separately; keep encounter-level artifacts local.
+diabetic_data.csv
+IDS_mapping.csv
+splits/*
+!splits/README.md
+review/*
+!review/REPORT.md
+!review/comparison_policy.json
+!review/validate.py
+output/
+outputs/
+artifact_build/
+tmp/
+dist/
+.ipynb_checkpoints/
+.env
+.env.*
+!.env.example
+*.pyc
+*.joblib
+*.ubj
