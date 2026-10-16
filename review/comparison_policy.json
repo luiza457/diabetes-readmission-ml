@@ -1,0 +1,10 @@
+{
+  "scope": "Independent same-data, same-config, same-environment CPU review of reconstructed local pipeline; historical Colab results cannot be reproduced without their source and historical membership.",
+  "declared_before_runs": true,
+  "split_membership": {"comparison": "exact by stable sample ID, patient ID and split"},
+  "labels": {"comparison": "exact"},
+  "predictions": {"comparison": "exact numeric equality joined by sample ID and split", "absolute_tolerance": 0, "relative_tolerance": 0, "nonfinite_allowed": false},
+  "metrics": {"comparison": "exact numeric equality", "absolute_tolerance": 0, "relative_tolerance": 0, "nonfinite_allowed": false},
+  "reason": "Same pinned software, same single-thread CPU histogram XGBoost, controlled seeds and input order should be exactly deterministic. Any discrepancy fails this scope and must be investigated; no tolerance will be silently loosened.",
+  "separate_metric_recomputation": "Recompute saved metrics from full-precision CSV round-trip predictions; use explicitly declared 1e-15 absolute / 0 relative tolerance solely for any CSV parsing last-bit effect, and report actual maximum difference. Fresh-process run-to-run reproducibility still requires exact equality."
+}
