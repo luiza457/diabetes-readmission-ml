@@ -1,0 +1,32 @@
+{
+  "test": {
+    "average_precision": 0.21601058584239669,
+    "brier_score": 0.0950023920048646,
+    "encounters": 20014,
+    "log_loss": 0.33189071948409815,
+    "patients": 14088,
+    "positive_rows": 2237,
+    "prevalence": 0.11177175976816228,
+    "roc_auc": 0.6628129916982484
+  },
+  "train": {
+    "average_precision": 0.2714592349591216,
+    "brier_score": 0.09400788627968351,
+    "encounters": 63974,
+    "log_loss": 0.32639250662324293,
+    "patients": 45078,
+    "positive_rows": 7301,
+    "prevalence": 0.11412448807327977,
+    "roc_auc": 0.7025789943718265
+  },
+  "validation": {
+    "average_precision": 0.2234885173512859,
+    "brier_score": 0.0953417253572077,
+    "encounters": 16123,
+    "log_loss": 0.3320303600341865,
+    "patients": 11270,
+    "positive_rows": 1819,
+    "prevalence": 0.11282019475283755,
+    "roc_auc": 0.673037055724253
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "scope": "Current two-process execution; separate from historical 52-check review",
+  "prediction_atol": 0,
+  "prediction_rtol": 0,
+  "checks": [
+    {
+      "name": "run_a fresh process completed",
+      "status": "passed"
+    },
+    {
+      "name": "run_b fresh process completed",
+      "status": "passed"
+    },
+    {
+      "name": "run_a artifact checksums",
+      "status": "passed"
+    },
+    {
+      "name": "run_a completed with required thread controls",
+      "status": "passed"
+    },
+    {
+      "name": "run_b artifact checksums",
+      "status": "passed"
+    },
+    {
+      "name": "run_b completed with required thread controls",
+      "status": "passed"
+    },
+    {
+      "name": "exact split membership",
+      "status": "passed"
+    },
+    {
+      "name": "independent cohort membership and labels",
+      "status": "passed"
+    },
+    {
+      "name": "patient groups are disjoint",
+      "status": "passed"
+    },
+    {
+      "name": "all saved metrics exactly equal",
+      "status": "passed"
+    },
+    {
+      "name": "train: exact prediction equality",
+      "status": "passed"
+    },
+    {
+      "name": "train: prediction IDs and labels match cohort",
+      "status": "passed"
+    },
+    {
+      "name": "train: restored model predictions exact and finite",
+      "status": "passed"
+    },
+    {
+      "name": "train: independent metrics within predeclared 1e-15 allowance",
+      "status": "passed"
+    },
+    {
+      "name": "validation: exact prediction equality",
+      "status": "passed"
+    },
+    {
+      "name": "validation: prediction IDs and labels match cohort",
+      "status": "passed"
+    },
+    {
+      "name": "validation: restored model predictions exact and finite",
+      "status": "passed"
+    },
+    {
+      "name": "validation: independent metrics within predeclared 1e-15 allowance",
+      "status": "passed"
+    },
+    {
+      "name": "test: exact prediction equality",
+      "status": "passed"
+    },
+    {
+      "name": "test: prediction IDs and labels match cohort",
+      "status": "passed"
+    },
+    {
+      "name": "test: restored model predictions exact and finite",
+      "status": "passed"
+    },
+    {
+      "name": "test: independent metrics within predeclared 1e-15 allowance",
+      "status": "passed"
+    }
+  ],
+  "passed": 22,
+  "failed": 0
+}

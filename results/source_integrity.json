@@ -1,0 +1,16 @@
+{
+  "train.py": "fbc205e74d2657376734284dda134ef428abf2f4a25756ed47b50a2f4cbdf5a7",
+  "reproducibility_config.json": "c010e1ee8403233585ad4ffb523b5856efaa99fe83889d921e929acc888bbc3d",
+  "requirements-reproducible.txt": "c88f1748853eb714353fc59b843a5a1c939517533c88158464c13be28e92a54e",
+  "REPRODUCIBILITY.md": "fee893cbf62763226f533c2759b4b410fa567e27ba4d2ef1e330225f45a4299e",
+  "01_data_cleaning.ipynb": "9208a9d5887e0ba232309d5f61d8aa840157763df7b9b912edcaf8ef4157314b",
+  "01_data_cleaning_practice.ipynb": [
+    "f100499a8b3927e48069b9720438df8b931a8cc29fae4b79910d4e54a17c192f",
+    "97d44f0ce4ba52b1f1aed0b182627f0ba912a59f777e070525597febf6aaab56"
+  ],
+  "02_readmission_cleaning_and_insights.ipynb": "8003fc2b2ac6e6da1eb4d2c742fe1ba9b182cd7a00dd7de899486b0009ddb957",
+  "MODEL_RESULTS_FROZEN_2026-09-29.md": "e44e84f3a1ebf84c2e5b59241cf38908b9c78b17c256cf7bd4cc0eff20b0246b",
+  "review/REPORT.md": "0ce718346622b9a8fd2292f3538310683bb738e542bae8bcb1b328a7cacb11ee",
+  "review/comparison_policy.json": "046f7e44feb6d01268cdc8ad09a60b210ab62e9785599e753955fd7e80e83fa8",
+  "review/validate.py": "6695cf55c6f19b45821794852fa23f5533dd04136ba75262d8d93d70ff8a7231"
+}

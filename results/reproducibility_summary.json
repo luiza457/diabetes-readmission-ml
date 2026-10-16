@@ -1,0 +1,221 @@
+{
+  "review_date": "2026-10-14",
+  "scope": "Pinned Windows Python 3.12.14 CPU environment; historical evidence",
+  "passed": 52,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "independent source SHA256 diabetic_data.csv",
+      "status": "passed"
+    },
+    {
+      "name": "independent source SHA256 IDS_mapping.csv",
+      "status": "passed"
+    },
+    {
+      "name": "original cohort decisions and labels",
+      "status": "passed"
+    },
+    {
+      "name": "fresh process run_a completed in prior invocation",
+      "status": "passed"
+    },
+    {
+      "name": "fresh process run_b completed in prior invocation",
+      "status": "passed"
+    },
+    {
+      "name": "fresh-process split membership exact",
+      "status": "passed"
+    },
+    {
+      "name": "manifest complete cohort, stable IDs, patient IDs, target exact",
+      "status": "passed"
+    },
+    {
+      "name": "patient and sample partitions disjoint",
+      "status": "passed"
+    },
+    {
+      "name": "split independently reconstructed from declared seed and cutoffs",
+      "status": "passed"
+    },
+    {
+      "name": "fresh-process all metrics exact",
+      "status": "passed"
+    },
+    {
+      "name": "learned numeric medians equal independent training-only medians",
+      "status": "passed"
+    },
+    {
+      "name": "learned vocabulary equals independent training-only categories",
+      "status": "passed"
+    },
+    {
+      "name": "natural heldout-only categories are absent from fitted vocabulary",
+      "status": "passed"
+    },
+    {
+      "name": "identifiers, target, weight and constants excluded; coded fields categorical",
+      "status": "passed"
+    },
+    {
+      "name": "literal lab None remains categorical",
+      "status": "passed"
+    },
+    {
+      "name": "heldout missing numerics use train medians and unknown category creates no feature",
+      "status": "passed"
+    },
+    {
+      "name": "numeric CSR zeros explicitly stored",
+      "status": "passed"
+    },
+    {
+      "name": "transforming heldout probes does not change learned state",
+      "status": "passed"
+    },
+    {
+      "name": "fresh-process train predictions exact by stable sample ID",
+      "status": "passed"
+    },
+    {
+      "name": "train prediction membership and labels exact independent cohort",
+      "status": "passed"
+    },
+    {
+      "name": "reloaded fitted model and preprocessor reproduce train probabilities exactly",
+      "status": "passed"
+    },
+    {
+      "name": "train independently recomputed metrics from saved predictions",
+      "status": "passed"
+    },
+    {
+      "name": "fresh-process validation predictions exact by stable sample ID",
+      "status": "passed"
+    },
+    {
+      "name": "validation prediction membership and labels exact independent cohort",
+      "status": "passed"
+    },
+    {
+      "name": "reloaded fitted model and preprocessor reproduce validation probabilities exactly",
+      "status": "passed"
+    },
+    {
+      "name": "validation independently recomputed metrics from saved predictions",
+      "status": "passed"
+    },
+    {
+      "name": "fresh-process test predictions exact by stable sample ID",
+      "status": "passed"
+    },
+    {
+      "name": "test prediction membership and labels exact independent cohort",
+      "status": "passed"
+    },
+    {
+      "name": "reloaded fitted model and preprocessor reproduce test probabilities exactly",
+      "status": "passed"
+    },
+    {
+      "name": "test independently recomputed metrics from saved predictions",
+      "status": "passed"
+    },
+    {
+      "name": "generated_a saved manifest reused unchanged",
+      "status": "passed"
+    },
+    {
+      "name": "generated_b saved manifest reused unchanged",
+      "status": "passed"
+    },
+    {
+      "name": "independently generated split pairs exact and match training",
+      "status": "passed"
+    },
+    {
+      "name": "manifest rejects missing",
+      "status": "passed"
+    },
+    {
+      "name": "manifest rejects duplicate",
+      "status": "passed"
+    },
+    {
+      "name": "manifest rejects wrong_encounter",
+      "status": "passed"
+    },
+    {
+      "name": "manifest rejects wrong_patient",
+      "status": "passed"
+    },
+    {
+      "name": "manifest rejects wrong_target",
+      "status": "passed"
+    },
+    {
+      "name": "manifest rejects unknown_split",
+      "status": "passed"
+    },
+    {
+      "name": "manifest rejects patient_overlap",
+      "status": "passed"
+    },
+    {
+      "name": "saved manifest rejects changed configuration",
+      "status": "passed"
+    },
+    {
+      "name": "saved manifest rejects altered checksum with correct identity",
+      "status": "passed"
+    },
+    {
+      "name": "saved manifest rejects missing sidecar",
+      "status": "passed"
+    },
+    {
+      "name": "training rejects data checksum mismatch",
+      "status": "passed"
+    },
+    {
+      "name": "run_a recorded final process controls and native thread pools",
+      "status": "passed"
+    },
+    {
+      "name": "run_a input/config/source/artifact provenance independently hashed",
+      "status": "passed"
+    },
+    {
+      "name": "run_a all pinned dependencies recorded at exact versions",
+      "status": "passed"
+    },
+    {
+      "name": "run_b recorded final process controls and native thread pools",
+      "status": "passed"
+    },
+    {
+      "name": "run_b input/config/source/artifact provenance independently hashed",
+      "status": "passed"
+    },
+    {
+      "name": "run_b all pinned dependencies recorded at exact versions",
+      "status": "passed"
+    },
+    {
+      "name": "same code, data, config and dependency versions across two fresh processes",
+      "status": "passed"
+    },
+    {
+      "name": "original CSVs/notebooks/frozen report unchanged from prechange baseline",
+      "status": "passed"
+    }
+  ],
+  "limitations": [
+    "No historical Colab code/model/splits available: historical AP and membership not verified.",
+    "Exact evidence applies to this Windows Python 3.12.14 pinned single-thread CPU environment only; other platforms/CPUs/versions/GPU not run.",
+    "No clinical/generalization or operational threshold claim."
+  ]
+}
